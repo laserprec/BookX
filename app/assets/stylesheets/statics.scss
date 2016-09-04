@@ -1,0 +1,27 @@
+// Place all the styles related to the Statics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.home_photo {
+	background: url('/assets/book_background_final.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 13% 0 30% 0;
+}
+
+.head_sentence {
+	font-size: 3em;
+	margin: auto 10% 0em 10%;
+	text-align: center;
+}
+
+.miss_state {
+	font-size: 2em;
+	padding: 4% 10% 4% 10%;
+
+}
+
+.section_icon{
+	margin: 0 13% 0 13%;
+}
+

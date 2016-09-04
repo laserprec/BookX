@@ -1,0 +1,11 @@
+
+<h2> User Profile </p>
+
+<p> Firstname: <%= @profile.firstname %> </p>
+<p> LastName: <%= @profile.lastname %> </p>
+<p> Email: <%= @profile.email %> </p>
+<p> Address: <%= @profile.address %> </p>
+<p> Phone Number: <%= @profile.phone_number %> </p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', posts_path %>

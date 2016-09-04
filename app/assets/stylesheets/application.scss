@@ -1,0 +1,101 @@
+/*
+*= require_self
+*= require_tree .
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap-select";
+
+
+html {
+	height: 100%;
+}
+
+body {
+    height:100%; 
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* To push footer at the bottom of page */
+.wrapper {  
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+
+
+/* Navigation Bar */
+.navbar-brand {
+	padding: 0.84em 0 0.8em 2%;
+}
+
+.search_form {
+	z-index: 0;
+}
+
+.campust_list {
+	top: 1px;
+}
+
+.search_bar {
+	top: 0px;
+	margin: 1px 0px 1px 0px;
+}
+
+.navbar-right{
+	padding: 0 1% 0 2%;
+}
+.center{
+	text-align: center;
+}
+
+.blue {
+	color:#2d75c6
+}
+
+footer{
+	background-color: #f6f6f6;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% 25% 15% 25%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
