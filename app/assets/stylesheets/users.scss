@@ -1,0 +1,58 @@
+.signup_container {
+	margin: 8% 35% 5% 35%;
+	padding: 3%;
+	border: 1px solid #afafaf;
+	width: 30%;
+}
+
+.signup_title h1 {
+	text-align: center;
+	margin:0 0 3% 0;
+}
+
+.signup_content {
+	
+}
+
+/* -------------- Children of .signup_conten --------------- */
+
+.signup_form-group {
+}
+
+.signup_button {
+	width:100%;
+}
+
+/* -------------------------- end -------------------------- */
+
+/* -------------- Screen-responsive Elements --------------- */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+	.signup_container {
+		margin: 10%;
+		width: 400px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.signup_container {
+		margin: 20% 15% 0% 15%;
+		width: 70%;
+		}
+	.signup_title h1 {
+		margin: 0 0 5% 0;
+		font-size: 2em;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+}
+/* -------------------------- end -------------------------- */

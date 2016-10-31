@@ -1,26 +1,31 @@
-<div class="container">
-<h1>Sign Up</h1>
-<%= form_for @user do |f| %>
-     <div class="form-group">
-       <%= f.label :firstname %>
-       <%= f.text_field :firstname %>
-     </div>
-     <div class="form-group">
-       <%= f.label :lastname %>
-       <%= f.text_field :lastname %>
-     </div>
-     <div class="form-group">
-       <%= f.label :email %>
-       <%= f.email_field  :email %>
-     </div>
-     <div class="form-group">
-       <%= f.label :password %>
-       <%= f.password_field :password %>
-     </div>
-     <div class="form-group">
-       <%= f.label :confirm_password %>
-       <%= f.password_field :comfirm_password %>
-     </div>
-     <%= submit_tag "Sign Up", class: "btn btn-primary" %>
-<% end %>
+<div class="container signup_container">
+  <div class="signup_title">
+    <h1>Sign Up</h1>
+  </div>
+  <div class="signup_content">
+  <%= form_for @user do |f| %>
+       <div class="form-group signup_form-group">
+         <%= f.label :firstname %> <br>
+         <%= f.text_field :firstname, class:'FULL-WIDTH' %>
+       </div>
+       <div class="form-group signup_form-group">
+         <%= f.label :lastname %> <br>
+         <%= f.text_field :lastname, class:'FULL-WIDTH' %>
+       </div>
+       <div class="form-group signup_form-group">
+         <%= f.label :email %> <br>
+         <%= f.email_field  :email, class:'FULL-WIDTH' %>
+       </div>
+       <div class="form-group signup_form-group">
+         <%= f.label :password %> <br>
+         <%= f.password_field :password, class:'FULL-WIDTH' %>
+       </div>
+       <div class="form-group signup_form-group">
+         <%= f.label :confirm_password %> <br>
+         <%= f.password_field :comfirm_password, class:'FULL-WIDTH' %>
+       </div>
+       <%= submit_tag "Sign Up", class: "btn btn-primary signup_button" %>
+  <% end %>
+  </div>
+</div>
 

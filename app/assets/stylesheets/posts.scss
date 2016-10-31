@@ -71,7 +71,21 @@
 	width: 140%
 }
 
-/* Screen-responsive Elements */
+/* -------------------------- end -------------------------- */
+
+/* -------------- Screen-responsive Elements --------------- */
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+	
+	
+
+}
+
 @media only screen and (max-width: 768px) {
 
 	[class*="book_cover_"] {
@@ -81,5 +95,10 @@
 	[class*="search_result"] {
 		padding: 4% 4% 4% 4%;
 	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
 
 }

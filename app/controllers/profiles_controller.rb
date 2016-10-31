@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
 	before_action :set_profile
-	
+
 	def show
 	end
 
@@ -10,18 +10,18 @@ class ProfilesController < ApplicationController
 	end
 
 	def edit
-  	end
+		end
 
 	def update
 		respond_to do |format|
-      if @profile.update(params_profile)
-        format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
-        format.json { render :show, status: :ok, location: @profile }
-      else
-        format.html { render :edit }
-        format.json { render json: @profile.errors, status: :unprocessable_entity }
-      end
-    end
+	    if @profile.update(params_profile)
+	      format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
+	      format.json { render :show, status: :ok, location: @profile }
+	    else
+	      format.html { render :edit }
+	      format.json { render json: @profile.errors, status: :unprocessable_entity }
+	    end
+	  end
 	end
 
 	private 
@@ -32,6 +32,6 @@ class ProfilesController < ApplicationController
 
 	def params_profile
 		params.require(:profile).permit(:firstname,:lastname,:email,:address,:phone_number)
-	end
+	end}
 
 end

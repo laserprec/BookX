@@ -7,6 +7,29 @@
 @import "bootstrap-select";
 
 
+/* --------------------- GLOBAL STYLES --------------------- */
+
+.center {
+	text-align: center;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.blue {
+	color:#2d75c6
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/* -------------------------- end -------------------------- */
+
+/* --------------------- GENERAL STYLE --------------------- */
+
 html {
 	height: 100%;
 }
@@ -21,13 +44,17 @@ body {
 .wrapper {  
 	min-height: 100%;
 	height: auto !important;
-	height: 100%;
+	height: 80%;
 	margin: 0 auto -4em;
 }
 
+footer{
+	background-color: #f6f6f6;
+}
 
+/* -------------------------- end -------------------------- */
+/* --------------------- Navigation Bar -------------------- */
 
-/* Navigation Bar */
 .navbar-brand {
 	padding: 0.84em 0 0.8em 2%;
 }
@@ -48,54 +75,40 @@ body {
 .navbar-right{
 	padding: 0 1% 0 2%;
 }
-.center{
-	text-align: center;
+
+/* -------------------------- end -------------------------- */
+/* -------------- Screen-responsive Elements --------------- */
+@media only screen and (max-width: 1200px) {
+
+
 }
 
-.blue {
-	color:#2d75c6
+@media only screen and (max-width: 992px) {
+	
+	
+
 }
 
-footer{
-	background-color: #f6f6f6;
+@media only screen and (max-width: 768px) {
+
+
 }
 
 
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 7px;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	footer {
+		font-size: .8em;
+		margin: 2px 2px 2px 2px;
+	}
+	footer li a {
+		padding:0px !important;
+	}
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% 25% 15% 25%;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+/* -------------------------- end -------------------------- */

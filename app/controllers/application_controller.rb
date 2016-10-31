@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   before_action :get_campus_list
-  before_action :set_new_user
   protect_from_forgery with: :exception
 
   private
@@ -16,12 +15,4 @@ class ApplicationController < ActionController::Base
 	  		@USER_CAMPUS = session[:campus]
 	  	end
   end
-
-  def set_new_user
-      if session[:user_id] = nil;
-        @user = User.new
-         binding.pry
-      end
-     
-    end
 end

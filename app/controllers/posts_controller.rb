@@ -4,13 +4,11 @@ class PostsController < ApplicationController
   before_action :check_if_exist
 
   def index
-
       if params[:search] != nil && params[:search] != ""
         @posts = Post.search(params[:selected_campus],params[:search]).order(:created_at,:id).page(params[:page]).per_page(10)
       else 
         @posts == nil
       end
-
   end
 
   def show
@@ -25,7 +23,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-
     respond_to do |format|
       if @post.save
         @post.campus = session[:campus]
