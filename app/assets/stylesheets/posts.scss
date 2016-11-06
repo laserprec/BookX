@@ -1,0 +1,104 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.search_result{
+	padding: 4% 11% 4% 19%;
+}
+
+.post_bg{
+	border-radius: 100px 10px 10px 100px;
+	background-color: #f6f6f6;
+	border:5px solid #cfcfcf;
+	-wenkit-transition: 1s background-color;
+	transition: 1s background-color;
+	padding: 0% 0% 0% 4%;
+	margin: 0 0% 3% 0;
+	height: 178px;
+}
+
+.post_bg:hover{
+	right: 20px;
+	background-color: #7f7f7f;
+	color: #f6f6f6;
+	
+	a {
+		color: #f6f6f6;
+	}
+	.book_cover_top,.book_cover_bot {
+		background-color: #7f7f7f;
+	}
+}
+
+/* Post Image */
+.post_image{
+	margin: 34px 0% 34px 0%;
+	width: 100px;
+}
+
+.book_wrap{							
+	padding: 0 0 0 0;
+	display: inline-block;
+}
+
+.book_page{
+	height: 30px;
+	border-top: 5px solid #cfcfcf;
+}
+
+.book_cover_top{
+	border: 5px solid #cfcfcf;
+	background-color: #f6f6f6; 
+	-wenkit-transition: 1s background-color;
+	transition: 1s background-color;
+	margin: 0 0 23px 0;
+	position: relative; 
+	border-left: 0px;
+	height: 15px; 
+	width: 140%;
+	top: -5px;
+}
+
+.book_cover_bot{
+	background-color: #f6f6f6;
+	border: 5px solid #cfcfcf;
+	-wenkit-transition: 1s background-color;
+	transition: 1s background-color;
+	position: relative; 
+	border-left: 0px;
+	height:15px;
+	width: 140%
+}
+
+/* -------------------------- end -------------------------- */
+
+/* -------------- Screen-responsive Elements --------------- */
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+	
+	
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	[class*="book_cover_"] {
+		width: 120%;
+	}
+
+	[class*="search_result"] {
+		padding: 4% 4% 4% 4%;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+}

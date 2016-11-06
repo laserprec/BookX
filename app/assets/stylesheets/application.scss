@@ -1,0 +1,114 @@
+/*
+*= require_self
+*= require_tree .
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap-select";
+
+
+/* --------------------- GLOBAL STYLES --------------------- */
+
+.center {
+	text-align: center;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.blue {
+	color:#2d75c6
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/* -------------------------- end -------------------------- */
+
+/* --------------------- GENERAL STYLE --------------------- */
+
+html {
+	height: 100%;
+}
+
+body {
+    height:100%; 
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* To push footer at the bottom of page */
+.wrapper {  
+	min-height: 100%;
+	height: auto !important;
+	height: 80%;
+	margin: 0 auto -4em;
+}
+
+footer{
+	background-color: #f6f6f6;
+}
+
+/* -------------------------- end -------------------------- */
+/* --------------------- Navigation Bar -------------------- */
+
+.navbar-brand {
+	padding: 0.84em 0 0.8em 2%;
+}
+
+.search_form {
+	z-index: 0;
+}
+
+.campust_list {
+	top: 1px;
+}
+
+.search_bar {
+	top: 0px;
+	margin: 1px 0px 1px 0px;
+}
+
+.navbar-right{
+	padding: 0 1% 0 2%;
+}
+
+/* -------------------------- end -------------------------- */
+/* -------------- Screen-responsive Elements --------------- */
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+	
+	
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 7px;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	footer {
+		font-size: .8em;
+		margin: 2px 2px 2px 2px;
+	}
+	footer li a {
+		padding:0px !important;
+	}
+
+}
+/* -------------------------- end -------------------------- */

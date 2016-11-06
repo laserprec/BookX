@@ -1,0 +1,45 @@
+<div class="post_bg col-lg-9 col-md-9 col-sm-11 col-xs-12 ">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+			<%= image_tag post.image.url(:thumb), class:'post_image' %>
+			</div>
+			<div class="col-lg-7 col-md-8 col-sm-8 col-xs-6">
+			  	<h2><%= link_to post.title, post %> </h2>
+			  	<p> <%= post.body.truncate_words(3) %> </p>
+			  	<p> 
+			    	<%= link_to 'Edit', edit_post_path(post) %>
+			    	<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure? There is no going back!' } %> 
+			  	</p>
+			</div> 
+			<div class="book_wrap col-lg-2 col-md-1 col-sm-1 col-xs-2">
+				<div class="book_cover_top col-lg-12"> </div>
+				<div class="book_page col-lg-12"></div>
+				<div class="book_page col-lg-12"></div>
+				<div class="book_page col-lg-12"></div>
+				<div class="book_page col-lg-12"></div>
+				<div class="book_cover_bot col-lg-12"> </div>
+			</div>
+
+</div>
+
+
+<!-- <% @posts.in_groups_of(3,false).each do |group| %>
+	<div class="row">
+		<% group.each do |post| %>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+				<div class = "bg_rice col-sm-12">
+					<%= image_tag post.image.url(:thumb), class:'col-lg-6 col-md-6 center' %>
+					<div class="col-lg-6 col-md-6">
+					  	<h2><%= link_to post.title, post %> </h2>
+					  	<p> <%= post.body.truncate_words(3) %> </p>
+					  	<p> <%= friendly_date post.created_at %>
+					  	<p> 
+					    	<%= link_to 'Edit', edit_post_path(post) %>
+					    	<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure? There is no going back!' } %> 
+					  	</p>
+				  </div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+<% end %>
+-->
