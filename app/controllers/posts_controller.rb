@@ -4,10 +4,10 @@ class PostsController < ApplicationController
   before_action :check_if_exist
 
   def index
-      if params[:search] != nil && params[:search] != ""
+      if params[:search] == nil || params[:search] == ""
+        @posts = Post.all.page(params[:page]).per_page(10)
+      else
         @posts = Post.search(params[:selected_campus],params[:search]).order(:created_at,:id).page(params[:page]).per_page(10)
-      else 
-        @posts == nil
       end
   end
 
